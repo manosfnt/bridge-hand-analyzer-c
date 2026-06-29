@@ -14,10 +14,7 @@ A command-line C application for analyzing Bridge hands.
 - Saves formatted hand data to a text file
 
 ## Project Structure
-
-- `main.c` – Main program and user commands
-- `bridge.c` – Bridge hand analysis functions
-- `bridge_file_operations.h` – Function declarations and data structures
+- `bridge_file_operations.c` – Function and data structures 
 - `data/` – Sample input files
 
 ## Input Format
