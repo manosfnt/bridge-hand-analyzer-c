@@ -7,7 +7,8 @@ struct hand
 {
     char HANDD[40];//26 XARAKTHRES KAI 12 KENA
 };
-//////////////////////////////////////////////////////////////
+
+
 int readFromInput(struct hand A[])
 {
     int n;
@@ -25,7 +26,8 @@ int readFromInput(struct hand A[])
     
     return n;
 }
-//////////////////////////////////////////////////////////////
+
+
 void printHand(struct hand A)
 {
     printf("SPADES:   ");
@@ -65,7 +67,8 @@ void printHand(struct hand A)
     }
     printf("\n");
 }
-//////////////////////////////////////////////////////////////
+
+
 bool balanced(struct hand A)
 {
     int count[4]={0};
@@ -93,7 +96,9 @@ bool balanced(struct hand A)
     else 
         return 0;
 }
-//////////////////////////////////////////////////////////////
+
+
+
 int hcp(struct hand A)
 { 
     int i,points;
@@ -111,7 +116,8 @@ int hcp(struct hand A)
     }
     return points;
 }
-//////////////////////////////////////////////////////////////
+
+
 int declarer(struct hand A)
 {
     int count[4]={0};
@@ -137,7 +143,8 @@ int declarer(struct hand A)
     }
     return points;
 }
-//////////////////////////////////////////////////////////////
+
+
 void response(struct hand A)
 {
     int i;
@@ -175,7 +182,8 @@ void response(struct hand A)
     }
     printf("\n");
 }
-//////////////////////////////////////////////////////////////
+
+
 int readFromFile(struct hand A[])
 {
     int N;
@@ -200,7 +208,8 @@ int readFromFile(struct hand A[])
     return N;
     
 }
-//////////////////////////////////////////////////
+
+
 void  saveData(struct hand A[],int n)
 {
     char S[101];
